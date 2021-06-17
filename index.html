@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLO</title>
+    <title>Portfolio </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/CSSRulePlugin.min.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/custom.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,15 +20,14 @@
     <header>
         <div class="container">
             <div class="header-inner">
-                <a class="logo" href="#">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <a class="logo" href="#"><span>c</span><span>r</span><span>e</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span> <span>x</span></a>
+                <!-- <a class="logo" href="#">creative x</a> -->
                 <button class="toggle-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
                 </button>
-                <!-- <nav>
+                <nav>
                     <ul class="nav-list">
                         <li>
                             <a href="#">home</a>
@@ -46,71 +42,51 @@
                             <a href="#">contact us</a>
                         </li>
                     </ul>
-                    <ul class="nav-icon">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav> -->
+                </nav>
+                <div class="grey-box"></div>
             </div>
+            <div class="black-border"></div>
         </div>
-        <!-- <div class="green-border"></div> -->
     </header>
     <!-- header end -->
 
     <!-- banner start -->
-    <section class="banner">
-        <div class="container">
-            <div class="banner-card">
-                <img src="images/banner-card.png" alt="">
+    <div class="banner-main">
+        <section class="banner">
+            <div class="container">
+                <div class="banner-inner">
+                    <div class="col-left zoom">
+                        <h6>Sophie Moore</h6>
+                        <h2>A Product Designer from New York</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus arcu nulla viverra arcu.</p>
+                        <a class="btn" href="#">contact me</a>
+                    </div>
+                    <div class="scroll-btn">
+                        <h6>Scroll Down</h6>
+                        <div class="arrow">
+                            <img src="images/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-right zoom">
+                        <img src="images/banner-card.png" alt="">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="overlay">
-            <div class="block block1"></div>
-            <div class="block block2"></div>
-            <div class="block block3"></div>
-            <div class="block block4"></div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- banner end -->
 
-    <!-- favorites start -->
-    <section class="favorites">
+    <!-- services start -->
+    <section class="services">
         <div class="container">
-            <div class="title-row">
-                <h2><span>o</span><span>u</span><span>r</span> <span>f</span><span>a</span><span>v</span><span>o</span><span>r</span><span>i</span><span>t</span><span>e</span><span>s</span></h2>
-                <div class="border border1"></div>
-                <div class="border border2"></div>
-            </div>
-            <div class="detail-row">
-                <div class="card">
-                    <img src="images/green1.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="images/green2.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="images/green3.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="images/green4.png" alt="">
-                </div>
+            <div class="services-inner">
+                <div class="col-left"></div>
+                <div class="col-right"></div>
             </div>
         </div>
     </section>
-    <!-- favorites end -->
+    <!-- services end -->
+
 </body>
 
 </html>

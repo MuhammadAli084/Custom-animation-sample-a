@@ -11,8 +11,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Cinzel';
+    font-family: 'Panchang';
     overflow-x: hidden;
+    background-color: #ededed;
 }
 
 s s h1,
@@ -45,25 +46,56 @@ a:hover {
 }
 
 .container {
-    max-width: 1345px;
+    max-width: 1290px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 h2 {
-    font-size: 63px;
-    line-height: 58px;
-    color: #286254;
-    font-weight: 400;
-    text-transform: lowercase;
-    font-family: cursive;
-    text-align: center;
-    text-transform: capitalize;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 8px;
+    color: #191919;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-h2 span {
-    display: inline-block;
-    transform: translateY(-80px);
+.btn {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #191919;
+    padding: 28px 56px;
+    border-radius: 50px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all ease .5s;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px -2px rgba(0, 0, 0, 0.45);
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #191919;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all ease .5s;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #191919;
 }
 
 
@@ -73,49 +105,57 @@ h2 span {
 /* fonts css start */
 
 @font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-Black.woff2') format('woff2'), url('../fonts/Cinzel-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-Regular.woff2') format('woff2'), url('../fonts/Cinzel-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-Medium.woff2') format('woff2'), url('../fonts/Cinzel-Medium.woff') format('woff');
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Semibold.woff2') format('woff2'), url('../fonts/Panchang-Semibold.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-ExtraBold.woff2') format('woff2'), url('../fonts/Cinzel-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-Bold.woff2') format('woff2'), url('../fonts/Cinzel-Bold.woff') format('woff');
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Extrabold.woff2') format('woff2'), url('../fonts/Panchang-Extrabold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-SemiBold.woff2') format('woff2'), url('../fonts/Cinzel-SemiBold.woff') format('woff');
-    font-weight: 600;
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Medium.woff2') format('woff2'), url('../fonts/Panchang-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Regular.woff2') format('woff2'), url('../fonts/Panchang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Bold.woff2') format('woff2'), url('../fonts/Panchang-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Light.woff2') format('woff2'), url('../fonts/Panchang-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panchang';
+    src: url('../fonts/Panchang-Extralight.woff2') format('woff2'), url('../fonts/Panchang-Extralight.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
@@ -127,19 +167,23 @@ h2 span {
 /* header css start */
 
 header {
+    z-index: 1;
+    width: 100%;
+}
+
+header .container {
+    padding: 20px 24px;
     position: relative;
 }
 
-header .green-border {
-    content: '';
+header .black-border {
+    width: 96%;
+    height: 3px;
+    background-color: #191919;
+    transform: scaleX(0);
     position: absolute;
-    background-color: #286254;
-    right: 0;
-    transform: translateX(100%);
-    width: 60%;
-    height: 80px;
-    bottom: 40px;
-    z-index: -1;
+    bottom: 0;
+    left: 24px;
 }
 
 header .header-inner,
@@ -147,16 +191,47 @@ header ul,
 header nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+}
+
+header nav,
+header .grey-box {
+    width: 100%;
+    position: fixed;
+    max-width: 50%;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+    border-top-left-radius: 900px;
+    border-bottom-left-radius: 900px;
+    overflow: hidden;
 }
 
 header nav {
-    max-width: 72%;
-    width: 100%;
-    margin-right: auto;
-    margin-left: 145px;
-    margin-bottom: 60px;
-    overflow: hidden;
+    transition: all ease 2s;
+    right: -50%;
+    z-index: 20;
+    background-color: #464646;
+}
+
+.header-inner nav.active {
+    right: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+header .grey-box {
+    opacity: 0.8;
+    max-width: 100%;
+    left: 100%;
+    transition: all ease 1s;
+    background-color: #000;
+}
+
+.header-inner .shadow {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 header .nav-icon {
@@ -165,50 +240,33 @@ header .nav-icon {
 }
 
 header .logo {
-    transition: all ease .8s;
-    max-width: 28%;
-    font-size: 0;
-    transform: translate(0px, -280px);
-    position: relative;
-    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+    color: #191919;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    transform: translate(0px, -150px);
+    display: inline-block;
 }
 
 header nav ul a {
     text-transform: uppercase;
 }
 
-header .nav-list li {
-    position: relative;
-    padding-bottom: 5px;
-}
-
-header .nav-list li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 0%;
-    background-color: #fff;
-    height: 2px;
-    bottom: 0;
-    transition: all ease .5s;
-}
-
 header ul a {
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 500;
-    line-height: 26px;
-    color: #cc9002;
+    line-height: 2;
+    color: #fff;
     transition: all ease .5s;
     transform: translate(0px, -20px);
 }
 
-header nav ul li:hover a {
-    color: #fff;
-}
-
-header .nav-list li:hover::after {
-    width: 100%;
+header ul a:hover {
+    letter-spacing: 10px;
 }
 
 header .nav-icon a:hover {
@@ -216,8 +274,82 @@ header .nav-icon a:hover {
 }
 
 header .nav-list {
-    max-width: 65%;
     width: 100%;
+    flex-direction: column;
+}
+
+header .toggle-btn {
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+}
+
+header .toggle-btn::before,
+header .toggle-btn::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #464646;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    opacity: 0;
+    transition: all ease-in-out .4s;
+    z-index: -1;
+}
+
+header .toggle-btn::after {
+    border: 0px solid #464646;
+    box-shadow: 1px 0 20px 1px #464646;
+}
+
+header .toggle-btn:hover::before,
+header .toggle-btn:hover::after {
+    opacity: 1;
+}
+
+header .toggle-btn:hover::before {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX( 0deg) rotateY( 0deg) rotateZ( 0deg) skew( 20deg, 0deg);
+}
+
+header .toggle-btn span {
+    width: 100%;
+    height: 4px;
+    background-color: #191919;
+    display: block;
+    margin-bottom: 10px;
+    transition: all ease-in-out .4s;
+    position: relative;
+    border-radius: 5px;
+}
+
+header .cross-btn .line1 {
+    transform: rotate( 45deg);
+    top: 15px;
+}
+
+header .cross-btn .line2 {
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+header .cross-btn .line3 {
+    transform: rotate( -45deg);
+    bottom: 12px;
+}
+
+header .toggle-btn .line3 {
+    margin-bottom: 0;
+}
+
+header .toggle-btn .line2 {
+    max-width: 70%;
+    margin-left: auto;
 }
 
 
@@ -226,59 +358,73 @@ header .nav-list {
 
 /* banner css start */
 
-.banner {
-    background-color: #fff;
-    background-size: cover;
-    margin-top: -40px;
-    padding: 300px 0 0;
-    overflow-y: hidden;
-    position: relative;
-    /* border-bottom: 25px solid #fff; */
+.banner h2 {
+    margin: 32px 0 24px;
 }
 
-.banner .banner-card {
-    /* margin-bottom: -25px; */
-    font-size: 0;
+.banner-inner {
+    position: relative;
+    padding: 233px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.scroll-btn {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.scroll-btn .arrow {
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease .5s;
+}
+
+.scroll-btn:hover .arrow {
+    transform: translateY(-25%);
+}
+
+.scroll-btn h6 {
     position: relative;
     z-index: 1;
 }
 
-.banner .overlay {
+.scroll-btn:hover h6 {
+    color: #757575;
+}
+
+.banner .col-left {
+    max-width: 74%;
+}
+
+.banner .col-right {
     position: absolute;
-    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 50%;
+    height: 700px;
     top: 0;
+    z-index: -1;
+    top: 100px;
+    right: 50px;
+}
+
+.banner .col-right img {
     width: 100%;
-    height: 100%;
-    display: flex;
 }
 
-.banner .block {
-    width: 100%;
-    height: 100%;
+.banner-inner .col-left {
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all ease .2s;
 }
 
-.banner .block1 {
-    transform: translateY(-800px);
-    background: url(../images/block1.png) no-repeat;
-    background-size: cover;
-}
-
-.banner .block2 {
-    transform: translateY(800px);
-    background: url(../images/block2.png) no-repeat;
-    background-size: cover;
-}
-
-.banner .block3 {
-    transform: translateY(-800px);
-    background: url(../images/block3.png) no-repeat;
-    background-size: cover;
-}
-
-.banner .block4 {
-    transform: translateY(800px);
-    background: url(../images/block4.png) no-repeat;
-    background-size: cover;
+.banner-inner .col-right {
+    transform: scale(0.1);
+    transition: all ease .2s;
 }
 
 
