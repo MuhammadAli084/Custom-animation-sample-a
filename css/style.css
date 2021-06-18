@@ -249,7 +249,7 @@ header .nav-icon {
     width: 100%;
 }
 
-header .logo {
+.logo {
     font-size: 25px;
     font-weight: bold;
     color: #191919;
@@ -257,7 +257,7 @@ header .logo {
     text-transform: uppercase;
 }
 
-header .logo span {
+.logo span {
     transform: translate(0px, -150px);
     display: inline-block;
 }
@@ -777,3 +777,131 @@ header .toggle-btn .line2 {
 
 
 /* contact css end */
+
+
+/* footer css start */
+
+footer {
+    overflow: hidden;
+}
+
+footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-top p {
+    font-size: 18px;
+    max-width: 52%;
+}
+
+.footer-main {
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+
+.footer-main .detail-row {
+    display: flex;
+    margin-top: 24px;
+}
+
+.footer-main .col {
+    padding: 80px 0;
+}
+
+.footer-main .col-left,
+.footer-main .col-right {
+    max-width: 50%;
+    width: 100%;
+}
+
+.footer-main .col-left {
+    border-right: 2px solid #000;
+}
+
+.footer-main .col-right {
+    padding-left: 50px;
+}
+
+.footer-main .col-right .detail-row {
+    margin-top: 40px;
+}
+
+.footer-main ul li {
+    margin-bottom: 26px;
+    color: #191919;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.footer-main ul li a {
+    color: #191919;
+    transition: all ease .5s;
+}
+
+.footer-main ul li a:hover {
+    color: #757575;
+}
+
+.footer-main ul:first-child {
+    margin-right: 40px;
+}
+
+.footer-main h3 {
+    color: #48604c;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.footer-main .col-right ul li a {
+    border-bottom: 2px solid #000;
+    color: #191919;
+    transition: all ease .5s;
+}
+
+.footer-main .col-right li:hover span {
+    color: #757575;
+    top: -10px;
+}
+
+.footer-main .col-right li:hover a {
+    color: #757575;
+}
+
+.footer-main .col-right ul li span {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 5px;
+    transform: rotate(-45deg);
+    transition: all ease .5s;
+    position: relative;
+    top: 0;
+}
+
+.footer-copyright {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-copyright p {
+    font-size: 18px;
+}
+
+.footer-copyright a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* footer css end */

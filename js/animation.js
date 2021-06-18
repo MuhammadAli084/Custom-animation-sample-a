@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    gsap.to(".logo span", 1, { y: 0, duration: 10, stagger: 0.2 });
+    gsap.to(".logo span", 1, { y: 0, duration: 5, stagger: 0.2 });
     gsap.to("header ul a", 1, { y: 0, duration: 18, stagger: 0.1 });
     gsap.to(".black-border", 3, { scaleX: 1, duration: 25, });
     gsap.to(".block", 1, { y: 0, duration: 1, stagger: 0.5 });
@@ -28,7 +28,7 @@ $(document).ready(function() {
         scrollTrigger: {
             trigger: '.contact-us',
             start: '0% 50%',
-            markers: true,
+            // markers: true,
             scrub: 1,
             toggleActions: "restart pause resume reverse",
             end: "90% 50%",
