@@ -11,17 +11,28 @@ $(document).ready(function() {
     // gsap.to(".zoom-in", 1, { opacity: 1, scale: 1 });
     gsap.to(".zoom", 1, { x: 0, scale: 1, opacity: 1 });
 
+    let tls = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.about-me',
+            start: '-30% 70%',
+            // markers: true,
+            scrub: 1,
+            toggleActions: "restart pause resume reverse",
+            end: "30% 0%",
+            // pin: true,
+        }
+    })
+    tls.to(".thumbnail", 5, { rotateZ: 100, duration: 5 });
 
-
-    // let tls = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: '.favorites',
-    //         start: '-30% 0%',
-    //         markers: true,
-    //         scrub: 1,
-    //         toggleActions: "restart pause resume reverse",
-    //         end: "300% 0%",
-    //         pin: true,
-    //     }
-    // })
+    let tls1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.contact-us',
+            start: '0% 50%',
+            markers: true,
+            scrub: 1,
+            toggleActions: "restart pause resume reverse",
+            end: "90% 50%",
+        }
+    })
+    tls1.to(".text-big-cta span", 5, { x: 0, duration: 5 });
 });

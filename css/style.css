@@ -13,7 +13,7 @@ body {
     padding: 0;
     font-family: 'Panchang';
     overflow-x: hidden;
-    background-color: #ededed;
+    background-color: #e8ebe8;
 }
 
 s s h1,
@@ -52,12 +52,22 @@ a:hover {
     padding: 0 24px;
 }
 
-h2 {
+h1 {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 8px;
     color: #191919;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: #191919;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
@@ -358,7 +368,7 @@ header .toggle-btn .line2 {
 
 /* banner css start */
 
-.banner h2 {
+.banner h1 {
     margin: 32px 0 24px;
 }
 
@@ -375,7 +385,7 @@ header .toggle-btn .line2 {
     cursor: pointer;
 }
 
-.scroll-btn .arrow {
+.banner .scroll-btn .arrow {
     position: absolute;
     right: -80px;
     top: 50%;
@@ -383,7 +393,7 @@ header .toggle-btn .line2 {
     transition: all ease .5s;
 }
 
-.scroll-btn:hover .arrow {
+.banner .scroll-btn:hover .arrow {
     transform: translateY(-25%);
 }
 
@@ -431,48 +441,339 @@ header .toggle-btn .line2 {
 /* banner css end */
 
 
-/* favorites css start */
+/* service css start */
 
-.favorites {
-    padding: 65px 0 0;
+.services .services-inner {
+    display: flex;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
-.favorites .detail-row {
+.services .detail-row {
+    display: flex;
+    margin-top: 24px;
+}
+
+.services .services-col {
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+
+.services .col-left {
+    max-width: 62%;
+    width: 100%;
+    border-right: 2px solid #000;
+}
+
+.services .col-right {
+    max-width: 38%;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.services ul li {
+    margin-bottom: 26px;
+    color: #191919;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.services ul:first-child {
+    margin-right: 40px;
+}
+
+.services h3 {
+    color: #48604c;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.services .col-right ul {
+    margin-top: 24px;
+    /* max-width: 240px; */
+}
+
+.services .col-right ul li a {
+    border-bottom: 2px solid #000;
+    color: #191919;
+    transition: all ease .5s;
+}
+
+.services .col-right li:hover span {
+    color: #757575;
+    top: -10px;
+}
+
+.services .col-right li:hover a {
+    color: #757575;
+}
+
+.services .col-right ul li span {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 5px;
+    transform: rotate(-45deg);
+    transition: all ease .5s;
+    position: relative;
+    top: 0;
+}
+
+
+/* service css end */
+
+
+/* portfolio css start */
+
+.portfolio {
+    padding: 200px 0;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio .detail-row {
+    padding-top: 80px;
+}
+
+.portfolio .portfolio-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 52px;
-    overflow-x: hidden;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
 }
 
-.favorites .card {
-    transform: translateY(-300px);
+.portfolio .portfolio-item .item {
+    transition: all ease .5s;
 }
 
-.favorites .title-row {
-    position: relative;
+.portfolio .detail-row .col-left {
+    max-width: 775px;
+    font-size: 0;
     overflow: hidden;
 }
 
-.title-row .border {
-    position: absolute;
-    max-width: 300px;
+.portfolio .detail-row .col-right {
+    margin-left: 50px;
+}
+
+.title span {
+    margin-bottom: 24px;
+    color: #757575;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.portfolio h3 {
+    font-size: 42px;
+    line-height: 53px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.portfolio .scroll-btn {
+    align-items: center;
+}
+
+.portfolio .scroll-btn .arrow {
+    width: 64px;
+    height: 64px;
+    margin-left: -20px;
+    transition: all ease .5s;
+}
+
+.portfolio .portfolio-item:hover .item {
+    transform: scale(1.1);
+}
+
+.portfolio .portfolio-item:hover .arrow {
+    margin-left: 5px;
+}
+
+.portfolio .portfolio-item:hover h6 {
+    color: #757575;
+}
+
+.title {
+    margin-bottom: 24px;
+}
+
+.portfolio h6 {
+    letter-spacing: 0;
+}
+
+.portfolio .detail-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .detail-btn a {
+    margin-top: 0;
+}
+
+
+/* portfolio css end */
+
+
+/* about css start */
+
+.about-me .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.about-me .col-left,
+.about-me .col-right {
+    position: relative;
+    max-width: 47%;
+}
+
+.about-me .about-card {
     width: 100%;
-    height: 4px;
-    background-color: #286254;
-    top: 50%;
-    transform: scaleX(0);
 }
 
-.border1 {
-    left: 80px;
-    transform-origin: right;
+.about-me .thumbnail {
+    position: absolute;
+    top: -15%;
+    right: -19%;
+    width: auto;
 }
 
-.border2 {
-    right: 80px;
-    transform-origin: left;
+.about-me p {
+    letter-spacing: 3px;
 }
 
 
-/* favorites css end */
+/* about css end */
+
+
+/* article css start */
+
+.article {
+    padding-top: 200px;
+}
+
+.article .title-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.article .title-row .btn {
+    margin-top: 0;
+}
+
+.article .title span {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.article h3 {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.article .article-item-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.article .article-item {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #000;
+}
+
+.article .col-left,
+.article .col-right {
+    max-width: 46%;
+}
+
+.article p {
+    font-size: 18px;
+}
+
+.article .article-item-inner:hover {
+    opacity: 0.5;
+}
+
+.article .article-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* article css end */
+
+
+/* contact css start */
+
+.contact-us {
+    padding: 290px 0;
+    position: relative;
+    text-align: center;
+}
+
+.contact-us .text-big-cta span {
+    position: absolute;
+    color: #e8ebe8;
+    font-size: 178px;
+    line-height: 180px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #babbbd, -1px 0 0 #babbbd, 1px 0 0 #babbbd, 0 -1px 0 #babbbd;
+    white-space: nowrap;
+}
+
+.contact-us .text-big-cta.top span {
+    left: 0%;
+    top: 100px;
+    transform: translateX(-26%);
+}
+
+.contact-us .text-big-cta.bottom span {
+    left: 0%;
+    bottom: 100px;
+    transform: translateX(22%);
+}
+
+.contact-us h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    max-width: 72%;
+    margin: 0 auto;
+}
+
+.contact-us .btn {
+    margin-top: 32px;
+}
+
+
+/* contact css end */
