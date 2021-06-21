@@ -10,6 +10,7 @@ $(document).ready(function() {
     // gsap.to(".fade-in", 2, { opacity: 1 });
     // gsap.to(".zoom-in", 1, { opacity: 1, scale: 1 });
     gsap.to(".zoom", 1, { x: 0, scale: 1, opacity: 1 });
+    gsap.to(".text-big-cta span", 3, { x: 0, duration: 3, repeat: -1, yoyo: true });
 
     let tls = gsap.timeline({
         scrollTrigger: {
@@ -24,15 +25,14 @@ $(document).ready(function() {
     })
     tls.to(".thumbnail", 5, { rotateZ: 100, duration: 5 });
 
-    let tls1 = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.contact-us',
-            start: '0% 50%',
-            // markers: true,
-            scrub: 1,
-            toggleActions: "restart pause resume reverse",
-            end: "90% 50%",
-        }
-    })
-    tls1.to(".text-big-cta span", 5, { x: 0, duration: 5 });
+    // let tls1 = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: '.contact-us',
+    //         start: '0% 50%',
+    //         // markers: true,
+    //         scrub: 1,
+    //         toggleActions: "restart pause resume reverse",
+    //         end: "90% 50%",
+    //     }
+    // })
 });

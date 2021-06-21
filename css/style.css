@@ -174,6 +174,9 @@ p {
 /* fonts css end */
 
 
+/* ---------------- Home page css start ----------------- */
+
+
 /* header css start */
 
 header {
@@ -489,6 +492,7 @@ header .toggle-btn .line2 {
     line-height: 18px;
     font-weight: 500;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .services .col-right ul {
@@ -734,6 +738,7 @@ header .toggle-btn .line2 {
     padding: 290px 0;
     position: relative;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .contact-us .text-big-cta span {
@@ -905,3 +910,175 @@ footer .footer-top p {
 
 
 /* footer css end */
+
+
+/* ---------------- Home page css end ----------------- */
+
+
+/* --------- contact page css start ---------- */
+
+.contact {
+    padding: 176px 0 200px;
+}
+
+.contact .container {
+    max-width: 1116px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .form-group {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    width: 100%;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+form .form-group:nth-child(2),
+form .form-group:nth-child(4) {
+    border-right: none;
+    padding: 44px;
+}
+
+form .message {
+    max-width: 100%;
+    border-right: none;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+form input,
+textarea {
+    border: none;
+    background: transparent;
+    padding: 8px 0;
+    font-size: 18px;
+    font-family: 'Panchang';
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+form input:focus,
+textarea:focus {
+    outline: none;
+}
+
+form textarea {
+    min-height: 156px;
+}
+
+
+/* contact-details css start */
+
+.contact-details .col-left li {
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.contact-details ul,
+.contact-details .col-right ul {
+    margin-top: 40px;
+}
+
+.contact-details .detail-row {
+    margin-top: 0;
+}
+
+.contact-details a {
+    color: #191919;
+    transition: all ease .5s;
+}
+
+.contact-details a:hover {
+    color: #757575;
+}
+
+
+/* contact-details css end */
+
+
+/* faq css start */
+
+.faq {
+    padding: 200px 0;
+}
+
+.faq .container {
+    max-width: 1116px;
+}
+
+.faq .faq-item {
+    border-bottom: 2px solid #000;
+    transition: 0.5s;
+    padding: 72px 0 48px;
+}
+
+.faq-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.faq-item:hover {
+    transform: scaleX(0.98);
+}
+
+.faq-item {
+    transition: 0.4s;
+}
+
+.faq-item .panel {
+    opacity: 0;
+    visibility: hidden;
+    content-visibility: hidden;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.faq-item.open .panel {
+    opacity: 1;
+    visibility: visible;
+    content-visibility: visible;
+    transition: 0.4s;
+}
+
+.faq h3 {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    font-family: 'Panchang';
+    color: #191919;
+}
+
+
+/* faq css end */
+
+
+/* --------- contact page css end ---------- */
