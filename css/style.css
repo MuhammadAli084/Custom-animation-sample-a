@@ -59,6 +59,7 @@ h1 {
     color: #191919;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h2 {
@@ -626,6 +627,12 @@ header .toggle-btn .line2 {
     margin-top: 0;
 }
 
+.portfolio-main .portfolio-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
 
 /* portfolio css end */
 
@@ -726,6 +733,42 @@ header .toggle-btn .line2 {
 
 .article .article-item:last-child {
     margin-bottom: 0;
+}
+
+.news .title-row {
+    flex-direction: column;
+    max-width: 970px;
+}
+
+.news h1 {
+    margin-bottom: 24px;
+}
+
+.news .title-row p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.news .detail-row {
+    padding-bottom: 80px;
+    border-top: 2px solid #000;
+}
+
+.news .article-item:first-child {
+    padding-top: 80px;
+}
+
+.news {
+    padding: 176px 0 200px;
+}
+
+.news .article-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.news .detail-row {
+    padding-bottom: 0;
 }
 
 
