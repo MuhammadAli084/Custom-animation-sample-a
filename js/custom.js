@@ -13,21 +13,20 @@ $(document).ready(function() {
     $(".accordion").click(function() {
         $(this).parent(".faq-item").toggleClass("open");
     });
-    // var acc = document.getElementsByClassName("accordion");
-    // var i;
 
-    // for (i = 0; i < acc.length; i++) {
-    //     acc[i].addEventListener("click", function() {
-    //         // this.classList.toggle("active");
-    //         var panel = this.nextElementSibling;
-    //         if (panel.style.opacity === "1") {
-    //             panel.style.opacity = "0";
-    //             // panel.style.visibility = "hidden";
-    //             panel.style.contentVisibility = "hidden";
-    //         } else {
-    //             panel.style.opacity = "1";
-    //             panel.style.contentVisibility = "visible";
-    //         }
-    //     });
-    // }
+    $('.scroll-up-btn').on("click", function() {
+        $(window).scrollTop(0);
+    });
+    var mybutton = document.getElementById("top-btn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.opacity = "0";
+        }
+    }
 });

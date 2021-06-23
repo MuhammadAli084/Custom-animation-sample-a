@@ -280,7 +280,7 @@ header ul a {
 }
 
 header ul a:hover {
-    letter-spacing: 10px;
+    letter-spacing: 12px;
 }
 
 header .nav-icon a:hover {
@@ -376,6 +376,11 @@ header .toggle-btn .line2 {
     margin: 32px 0 24px;
 }
 
+.banner p {
+    font-size: 24px;
+    color: #464646;
+}
+
 .banner-inner {
     position: relative;
     padding: 233px 0;
@@ -430,15 +435,18 @@ header .toggle-btn .line2 {
     width: 100%;
 }
 
-.banner-inner .col-left {
-    opacity: 0;
-    transform: translateX(-30%);
-    transition: all ease .2s;
-}
-
 .banner-inner .col-right {
     transform: scale(0.1);
     transition: all ease .2s;
+}
+
+.banner-inner .slide {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 220% 100%;
+    background-position: 100%;
+    background-image: linear-gradient( 90deg, #191919 47%, rgb(254 254 254 / 0%) 46%);
 }
 
 
@@ -949,6 +957,40 @@ footer .footer-top p {
     color: #000;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.scroll-up {
+    position: relative;
+}
+
+.scroll-up .scroll-up-btn {
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: #000;
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    border: 3px solid #000;
+}
+
+.scroll-up .scroll-up-btn i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.scroll-up .scroll-up-btn:hover {
+    background-color: #fff;
+    border-color: #757575;
+}
+
+.scroll-up .scroll-up-btn:hover .arrow i {
+    color: #000;
 }
 
 
