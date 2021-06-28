@@ -26,6 +26,7 @@ $(document).ready(function() {
         }
     })
     tls.to(".thumbnail", 5, { rotateZ: 100, duration: 5 });
+    tls.to(".thumbnail-dark", 5, { rotateZ: 100, duration: 5 });
 
     // let tls1 = gsap.timeline({
     //     scrollTrigger: {

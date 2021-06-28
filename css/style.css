@@ -804,6 +804,22 @@ header .toggle-btn .line2 {
     width: auto;
 }
 
+.about-me .thumbnail-dark {
+    display: none;
+    position: absolute;
+    top: -15%;
+    right: -19%;
+    width: auto;
+}
+
+:root.dark-mode .about-me .thumbnail {
+    display: none;
+}
+
+:root.dark-mode .thumbnail-dark {
+    display: block;
+}
+
 .about-me p {
     letter-spacing: 3px;
 }
