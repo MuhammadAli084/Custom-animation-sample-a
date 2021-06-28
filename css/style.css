@@ -1665,4 +1665,19 @@ form textarea {
         height: 50px;
         width: 50px;
     }
+    .faq h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .contact-details .col-left li {
+        margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .faq {
+        padding: 80px 0;
+    }
+    .faq .faq-item {
+        padding: 20px 0;
+    }
 }
