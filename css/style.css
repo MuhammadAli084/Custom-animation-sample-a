@@ -150,7 +150,7 @@ p {
 /* switch btn css start */
 
 .switch {
-    position: absolute;
+    position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
@@ -1580,7 +1580,7 @@ form textarea {
         margin: 20px 0;
     }
     .logo {
-        font-size: 22px;
+        font-size: 20px;
     }
     .banner-inner {
         padding: 56px 0;
@@ -1644,5 +1644,9 @@ form textarea {
     }
     .banner .btn {
         max-width: 250px;
+    }
+    .scroll-up .scroll-up-btn {
+        height: 50px;
+        width: 50px;
     }
 }
