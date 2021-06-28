@@ -1503,4 +1503,7 @@ form textarea {
     .footer-main ul li {
         margin-bottom: 20px;
     }
+    header ul a {
+        font-size: 30px;
+    }
 }
