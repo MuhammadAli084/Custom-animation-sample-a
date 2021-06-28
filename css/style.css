@@ -136,7 +136,7 @@ p {
 .loader {
     width: 100%;
     height: 100vh;
-    background-color: var(--black-color);
+    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -978,6 +978,18 @@ header .toggle-btn .line2 {
     margin-top: 32px;
 }
 
+.contact-us .arrow-down-white {
+    display: none;
+}
+
+:root.dark-mode .arrow-down-white {
+    display: block;
+}
+
+:root.dark-mode .arrow-down {
+    display: none;
+}
+
 
 /* contact css end */
 
@@ -1473,6 +1485,9 @@ form textarea {
     p {
         font-size: 16px;
         line-height: 28px;
+    }
+    .loader img {
+        width: 400px;
     }
     .banner p {
         font-size: 18px;
