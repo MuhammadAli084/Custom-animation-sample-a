@@ -9,6 +9,9 @@ $(document).ready(function() {
         $(".toggle-btn").click(function() {
             $(".header-inner .grey-box").toggleClass("shadow");
         });
+        $(".slider ").click(function() {
+            $(":root").toggleClass("dark-mode");
+        });
     });
     $(".accordion").click(function() {
         $(this).parent(".faq-item").toggleClass("open");
