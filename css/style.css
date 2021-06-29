@@ -778,6 +778,18 @@ header .toggle-btn .line2 {
     border-bottom: none;
 }
 
+.right-arr-dark {
+    display: none;
+}
+
+:root.dark-mode .right-arr-dark {
+    display: block;
+}
+
+:root.dark-mode .right-arrow {
+    display: none;
+}
+
 
 /* portfolio css end */
 
