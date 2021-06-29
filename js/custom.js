@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    if (localStorage.getItem('a')) {
+        $(":root").addClass("dark-mode");
+        $("#switch-btn").attr('checked', '')
+    }
     $(function() {
         $(".toggle-btn").click(function() {
             $(this).toggleClass("cross-btn");
@@ -9,7 +13,12 @@ $(document).ready(function() {
         $(".toggle-btn").click(function() {
             $(".header-inner .grey-box").toggleClass("shadow");
         });
-        $(".slider ").click(function() {
+        $(".slider").click(function() {
+            if (localStorage.getItem('a')) {
+                localStorage.removeItem('a');
+            } else {
+                localStorage.setItem('a', 'bc');
+            }
             $(":root").toggleClass("dark-mode");
         });
     });
