@@ -701,7 +701,7 @@ header .toggle-btn .line2 {
 }
 
 .portfolio .portfolio-item .item {
-    transition: all ease .5s;
+    transition: 0.4s;
 }
 
 .portfolio .detail-row .col-left {
@@ -1636,6 +1636,9 @@ form textarea {
     }
     .logo {
         font-size: 20px;
+    }
+    header ul a:hover {
+        letter-spacing: 5px;
     }
     .banner-inner {
         padding: 56px 0;

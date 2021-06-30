@@ -14,7 +14,7 @@ $(document).ready(function() {
     gsap.to(".text-big-cta span", 3, { x: 0, duration: 3, repeat: -1, yoyo: true });
     gsap.to(".scroll-up-btn", 1, { y: 20, duration: 0.1, repeat: -1, yoyo: true });
 
-    let tls = gsap.timeline({
+    let tls0 = gsap.timeline({
         scrollTrigger: {
             trigger: '.about-me',
             start: '-30% 70%',
@@ -25,17 +25,29 @@ $(document).ready(function() {
             // pin: true,
         }
     })
-    tls.to(".thumbnail", 5, { rotateZ: 100, duration: 5 });
-    tls.to(".thumbnail-dark", 5, { rotateZ: 100, duration: 5 });
+    tls0.to(".thumbnail", 5, { rotateZ: 100, duration: 5 });
+    tls0.to(".thumbnail-dark", 5, { rotateZ: 100, duration: 5 });
 
     // let tls1 = gsap.timeline({
     //     scrollTrigger: {
-    //         trigger: '.contact-us',
-    //         start: '0% 50%',
+    //         trigger: '.portfolio',
+    //         start: '0% 10%',
     //         // markers: true,
-    //         scrub: 1,
     //         toggleActions: "restart pause resume reverse",
-    //         end: "90% 50%",
+    //         end: "0% 0%",
     //     }
     // })
+    // tls1.to(".portfolio-item .item , .detail-row .col-right ", { scale: 1, duration: 1, opacity: 1, stagger: 3 });
+
+
+    // let tls2 = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: '.about-me',
+    //         start: '0% 10%',
+    //         markers: true,
+    //         toggleActions: "restart none resume reverse",
+    //         end: "0% 0%",
+    //     }
+    // })
+    // tls2.fromTo(".about-me .about-card , .about-me p , .about-me a, .about-me h2 ", { x: ' 50%', duration: 0.19, opacity: 0, stagger: 3 }, { x: '0', duration: 1, opacity: 1, stagger: 3 });
 });
