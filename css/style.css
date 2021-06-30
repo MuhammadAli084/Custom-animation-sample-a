@@ -397,7 +397,7 @@ header ul a {
     font-size: 50px;
     font-weight: 500;
     line-height: 2;
-    color: var(--white-color);
+    color: var(--black-color);
     transition: all ease .5s;
     transform: translate(0px, -20px);
 }
@@ -1415,6 +1415,76 @@ form textarea {
 .experience .detail-row .col {
     max-width: 50%;
     width: 100%;
+    border-right: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+    padding: 110px 40px 110px 0;
+}
+
+.experience .detail-row .col:nth-child(2),
+.experience .detail-row .col:nth-child(4) {
+    border-right: none;
+    padding: 110px 0 110px 60px;
+}
+
+.experience .detail-row .col:nth-child(3),
+.experience .detail-row .col:nth-child(4) {
+    border-bottom: none;
+}
+
+.experience h3 {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.experience .title span {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+.experience .title {
+    margin-bottom: 12px;
+}
+
+.experience p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.experience .col a {
+    color: var(--black-color);
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--black-color);
+    transition: all ease .5s;
+    margin-top: 48px;
+    padding-bottom: 10px;
+}
+
+.experience .col a span {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 5px;
+    transform: rotate( -45deg);
+    transition: all ease .5s;
+    position: relative;
+    top: 0;
+}
+
+.experience .col a:hover span {
+    color: var(--dark-gray);
+    top: -10px;
+}
+
+.experience .col a:hover {
+    color: var(--dark-gray);
 }
 
 
