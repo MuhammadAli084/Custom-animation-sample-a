@@ -1344,6 +1344,83 @@ form textarea {
 /* faq css end */
 
 
+/* about me css start */
+
+.about-banner {
+    padding: 160px 0 200px;
+    min-height: 1000px;
+    position: relative;
+}
+
+.about-banner h1 {
+    margin-bottom: 24px;
+}
+
+.about-banner .col-right {
+    position: absolute;
+    max-width: 992px;
+    width: 100%;
+    height: 626px;
+    right: 0;
+    top: 265px;
+    z-index: -1;
+}
+
+.about-banner .col-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-banner .col-left {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.story {
+    padding-top: 200px;
+}
+
+.story .detail-row,
+.experience .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    border-bottom: 2px solid var(--black-color);
+    padding: 0 0 200px;
+}
+
+.story .detail-row .col {
+    max-width: 46%;
+}
+
+.story .detail-row .col p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.experience {
+    padding: 200px 0;
+}
+
+.experience .detail-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    padding: 0;
+}
+
+.experience .detail-row .col {
+    max-width: 50%;
+    width: 100%;
+}
+
+
+/* about me css end */
+
+
 /* --------- contact page css end ---------- */
 
 @media screen and (max-width: 1290px) {
