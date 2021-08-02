@@ -92,6 +92,12 @@ h2 {
     text-transform: uppercase;
 }
 
+@keyframes hvr-pulse-shrink {
+    to {
+        transform: scale(0.9);
+    }
+}
+
 .btn {
     font-size: 16px;
     line-height: 18px;
@@ -103,12 +109,19 @@ h2 {
     margin-top: 70px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all ease .5s;
+    /* transition: all ease .5s; */
+    transform: perspective(1px) translateZ(0);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus,
+.btn:active {
+    animation-name: hvr-pulse-shrink;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     background-color: var(--btn-color);
-    transform: translateY(-5px);
     box-shadow: 0px 10px 25px -2px var(--btn-color);
 }
 
