@@ -304,18 +304,12 @@ input:checked+.slider:before {
 header {
     z-index: 1;
     width: 100%;
-    /* position: absolute;
+    /* position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     transition: all ease-in-out .9s; */
 }
-
-
-/* .fixed {
-    position: sticky;
-    background: radial-gradient(circle, rgba(194, 194, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
-} */
 
 header .container {
     padding: 0 24px;
@@ -513,6 +507,11 @@ header .toggle-btn .line2 {
 
 
 /* banner css start */
+
+
+/* .banner {
+    padding: 98px 0 0;
+} */
 
 .banner h1 {
     margin: 32px 0 24px;
@@ -1522,6 +1521,12 @@ form textarea {
     .about-me p {
         letter-spacing: 0;
     }
+    .experience h3 {
+        font-size: 24px;
+    }
+    .experience .title span {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1536,6 +1541,9 @@ form textarea {
     header .toggle-btn::before,
     header .toggle-btn::after {
         display: none;
+    }
+    .about-banner .col-right {
+        max-width: 900px;
     }
 }
 
@@ -1657,6 +1665,47 @@ form textarea {
     /* header .grey-box {
         display: none;
     } */
+    .experience,
+    .about-banner {
+        padding: 100px 0;
+    }
+    .experience .detail-row {
+        flex-direction: column;
+    }
+    .experience .detail-row .col {
+        max-width: 100%;
+        width: 100%;
+        border-right: none;
+        padding: 50px 0 !important;
+    }
+    .about-banner .col-right {
+        height: 500px;
+        top: 175px;
+    }
+    .about-banner {
+        min-height: 775px;
+    }
+    .about-banner .col-left {
+        max-width: 76%;
+    }
+    .story {
+        padding-top: 0;
+    }
+    .story .detail-row {
+        padding: 0 0 100px;
+    }
+    .experience .detail-row {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .experience .detail-row .col:nth-child(3),
+    .experience .detail-row .col:nth-child(4) {
+        border-bottom: 2px solid var(--black-color);
+    }
+    .experience .btn {
+        max-width: 270px;
+        margin: 80px auto 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1787,6 +1836,40 @@ form textarea {
     .logo {
         font-size: 22px;
     }
+    .experience,
+    .about-banner {
+        padding: 50px 0;
+    }
+    .about-banner h1 {
+        font-size: 53px;
+        line-height: 60px;
+    }
+    .about-banner .col-left {
+        max-width: 100%;
+    }
+    .about-banner p {
+        font-size: 18px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .story .detail-row {
+        padding: 0 0 50px;
+        flex-direction: column;
+    }
+    .story .detail-row .col {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .experience .col a {
+        font-size: 20px;
+    }
+    .experience h3 {
+        line-height: 32px;
+    }
+    .story .detail-row .col p,
+    .experience p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1888,5 +1971,20 @@ form textarea {
     }
     header .nav-btn {
         max-width: 55px;
+    }
+    .about-banner h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .about-banner .col-right {
+        height: 450px;
+        top: 125px;
+        max-width: 100%;
+    }
+    .about-banner {
+        min-height: 625px;
+    }
+    .story h2 {
+        font-size: 25px;
     }
 }

@@ -13,6 +13,7 @@ $(document).ready(function() {
     gsap.to(".zoom", 2, { x: 0, scale: 1, opacity: 1 });
     gsap.to(".text-big-cta span", 3, { x: 0, duration: 3, repeat: -1, yoyo: true });
     gsap.to(".scroll-up-btn", 1, { y: 20, duration: 0.1, repeat: -1, yoyo: true });
+    gsap.fromTo(".Fade-In", 10, { opacity: 0, }, { opacity: 1 });
 
     let tls0 = gsap.timeline({
         scrollTrigger: {
@@ -28,16 +29,23 @@ $(document).ready(function() {
     tls0.to(".thumbnail", 5, { rotateZ: 100, duration: 5 });
     tls0.to(".thumbnail-dark", 5, { rotateZ: 100, duration: 5 });
 
-    // let tls1 = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: '.portfolio',
-    //         start: '0% 10%',
-    //         // markers: true,
-    //         toggleActions: "restart pause resume reverse",
-    //         end: "0% 0%",
-    //     }
-    // })
-    // tls1.to(".portfolio-item .item , .detail-row .col-right ", { scale: 1, duration: 1, opacity: 1, stagger: 3 });
+    let tls1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section1',
+            toggleActions: "restart pause resume reverse",
+            start: '-50% 60%',
+            end: "120% 70%",
+            // markers: true,
+        }
+    })
+    tls1.fromTo(".zoom-in", 1.5, { rotateY: '50deg' }, { rotateY: '0deg' });
+    // tls1.fromTo(".zoom-in", 1.5, { scale: 0.5 }, { scale: 1 });
+    // tls1.fromTo(".zoom-in", 1.5, { width: 0, opacity: 0 }, { width: '100%', opacity: 1 });
+    // tls1.from(".zoom-in", 1, {
+    //     scale: 0.5,
+    //     opacity: 0,
+    //     // duration: 0.5
+    // });
 
 
     // let tls2 = gsap.timeline({
