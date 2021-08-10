@@ -36,6 +36,10 @@ body {
     --btn-color: #fff;
 }
 
+.container.form-status-footer {
+    display: none !important;
+}
+
 s s h1,
 h2,
 h3,
@@ -607,6 +611,7 @@ header .toggle-btn .line2 {
     display: flex;
     border-top: 2px solid var(--black-color);
     border-bottom: 2px solid var(--black-color);
+    overflow-x: hidden;
 }
 
 .services .detail-row {
@@ -710,6 +715,7 @@ header .toggle-btn .line2 {
     padding-bottom: 80px;
     border-bottom: 2px solid var(--black-color);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .portfolio .portfolio-item .item {

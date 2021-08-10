@@ -32,30 +32,48 @@ $(document).ready(function() {
     let tls1 = gsap.timeline({
         scrollTrigger: {
             trigger: '.section1',
-            toggleActions: "restart pause resume reverse",
-            start: '-50% 60%',
+            toggleActions: "restart none resume reverse",
+            start: '-20% 60%',
             end: "120% 70%",
             // markers: true,
         }
     })
-    tls1.fromTo(".zoom-in", 1.5, { rotateY: '50deg' }, { rotateY: '0deg' });
-    // tls1.fromTo(".zoom-in", 1.5, { scale: 0.5 }, { scale: 1 });
-    // tls1.fromTo(".zoom-in", 1.5, { width: 0, opacity: 0 }, { width: '100%', opacity: 1 });
-    // tls1.from(".zoom-in", 1, {
-    //     scale: 0.5,
-    //     opacity: 0,
-    //     // duration: 0.5
-    // });
+    tls1.fromTo(".fade-right", 1, { translateX: '-80%', opacity: 0 }, { translateX: 0, opacity: 1 });
+    tls1.fromTo(".fade-left", 1, { translateX: '50%', opacity: 0 }, { translateX: 0, opacity: 1 });
 
+    let tls2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.item1',
+            toggleActions: "restart none resume reverse",
+            start: '-40% 60%',
+            end: "100% 70%",
+            // markers: true,
+        }
+    })
+    tls2.fromTo(".item1-fade-right", 0.8, { scale: 1.2, translateY: "-100%", opacity: 0 }, { scale: 1, translateY: "0", opacity: 1 });
+    tls2.fromTo(".item1-fade-left", 0.8, { translateX: '50%', opacity: 0 }, { translateX: 0, opacity: 1 });
 
-    // let tls2 = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: '.about-me',
-    //         start: '0% 10%',
-    //         markers: true,
-    //         toggleActions: "restart none resume reverse",
-    //         end: "0% 0%",
-    //     }
-    // })
-    // tls2.fromTo(".about-me .about-card , .about-me p , .about-me a, .about-me h2 ", { x: ' 50%', duration: 0.19, opacity: 0, stagger: 3 }, { x: '0', duration: 1, opacity: 1, stagger: 3 });
+    let tls3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.item2',
+            toggleActions: "restart none resume reverse",
+            start: '-40% 60%',
+            end: "100% 70%",
+            // markers: true,
+        }
+    })
+    tls3.fromTo(".item2-fade-right", 0.8, { scale: 1.2, translateY: "-100%", opacity: 0 }, { scale: 1, translateY: "0", opacity: 1 });
+    tls3.fromTo(".item2-fade-left", 0.8, { translateX: '50%', opacity: 0 }, { translateX: 0, opacity: 1 });
+
+    let tls4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.item3',
+            toggleActions: "restart none resume reverse",
+            start: '-40% 60%',
+            end: "100% 70%",
+            // markers: true,
+        }
+    })
+    tls4.fromTo(".item3-fade-right", 0.8, { scale: 1.2, translateY: "-100%", opacity: 0 }, { scale: 1, translateY: "0", opacity: 1 });
+    tls4.fromTo(".item3-fade-left", 0.8, { translateX: '50%', opacity: 0 }, { translateX: 0, opacity: 1 });
 });
