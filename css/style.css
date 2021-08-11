@@ -309,6 +309,9 @@ header {
     z-index: 1;
     width: 100%;
     position: fixed;
+    transition: 0.6s;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    /* box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.1); */
     /* left: 0;
     top: 0;
     width: 100%;
