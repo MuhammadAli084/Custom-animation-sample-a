@@ -1,16 +1,26 @@
 $(document).ready(function() {
-    // gsap.from(".black-border", {
+    // gsap.from(".sticky-border", {
     //     scrollTrigger: {
-    //         trigger: "header",
+    //         trigger: "body",
     //         toggleActions: "restart none resume reverse",
     //         // toggleActions: "play complete reverse reset"
     //     },
     //     scaleX: 0,
-    //     duration: 10,
+    //     duration: 8,
     //     repeat: -1,
     //     transformOrigin: "center",
     //     ease: "none"
     // });
+    gsap.to('progress', {
+        value: 100,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: "body",
+            scrub: 0.3,
+            start: 0,
+            end: 0
+        }
+    });
     gsap.to(".logo span", 1, { y: 0, duration: 5, stagger: 0.2 });
     gsap.to("header ul a", 1, { y: 0, duration: 18, stagger: 0.1 });
     // gsap.to(".black-border", 3, { scaleX: 1, duration: 25, });
