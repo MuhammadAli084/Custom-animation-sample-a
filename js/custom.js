@@ -55,7 +55,9 @@ $(document).ready(function() {
 
         } else {
             // upscroll code
-            $("header").css("top", "0px");
+            $("header").css(
+                "top", "0px"
+            );
         }
         lastScrollTop = st;
     });
