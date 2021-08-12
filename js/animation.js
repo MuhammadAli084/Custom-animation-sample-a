@@ -97,4 +97,50 @@ $(document).ready(function() {
     })
     tls4.fromTo(".item3-fade-right", 0.8, { scale: 1.2, translateY: "-100%", opacity: 0 }, { scale: 1, translateY: "0", opacity: 1 });
     tls4.fromTo(".item3-fade-left", 0.8, { translateX: '50%', opacity: 0 }, { translateX: 0, opacity: 1 });
+
+    // CURSOR
+    var cursor = $(".cursor"),
+        follower = $(".cursor-follower");
+
+    var posX = 0,
+        posY = 0;
+
+    var mouseX = 0,
+        mouseY = 0;
+
+    TweenMax.to({}, 0.016, {
+        repeat: -1,
+        onRepeat: function() {
+            posX += (mouseX - posX) / 9;
+            posY += (mouseY - posY) / 9;
+
+            TweenMax.set(follower, {
+                css: {
+                    left: posX - 12,
+                    top: posY - 12
+                }
+            });
+
+            TweenMax.set(cursor, {
+                css: {
+                    left: mouseX,
+                    top: mouseY
+                }
+            });
+        }
+    });
+
+    $(document).on("mousemove", function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+    // yellow circle
+    $("a").on("mouseenter", function() {
+        cursor.addClass("active");
+        follower.addClass("active");
+    });
+    $("a ").on("mouseleave", function() {
+        cursor.removeClass("active");
+        follower.removeClass("active");
+    });
 });

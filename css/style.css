@@ -14,6 +14,12 @@ body {
     font-family: 'Panchang';
     overflow-x: hidden;
     background-color: var(--light-color);
+    cursor: none;
+}
+
+a:hover,
+button:hover {
+    cursor: none;
 }
 
 :root {
@@ -281,6 +287,68 @@ progress::-moz-progress-bar {
 /* progress bar end */
 
 
+/* cursor css start */
+
+.cursor {
+    position: fixed;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+}
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(0);
+}
+
+.cursor.menu-active {
+    opacity: 1;
+    transform: scale(0);
+}
+
+.cursor.hovered {
+    opacity: 1;
+}
+
+.cursor-follower {
+    position: fixed;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(2px, 2px);
+}
+
+.cursor-follower.active {
+    opacity: 1;
+    transform: scale(2);
+}
+
+.cursor-follower.menu-active {
+    opacity: 1;
+    transform: scale(2);
+}
+
+.cursor-follower.hovered {
+    opacity: 1;
+}
+
+
+/* cursor css end */
+
+
 /* Global css end */
 
 
@@ -480,7 +548,7 @@ header .toggle-btn {
     height: 55px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: none;
     position: relative;
     z-index: 9999;
 }
