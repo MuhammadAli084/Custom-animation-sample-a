@@ -31,6 +31,7 @@ button:hover {
     --green-color: #48604c;
     --btn-color: rgba(0, 0, 0, 0.7);
     --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --cursor-color: #000;
 }
 
 :root.dark-mode {
@@ -41,7 +42,8 @@ button:hover {
     --dark-gray: #fff;
     --green-color: #757575;
     --btn-color: #fff;
-    --box-shadow-color: rgba(255, 255, 255, 0.2)
+    --box-shadow-color: rgba(255, 255, 255, 0.2);
+    --cursor-color: rgb(177 177 177);
 }
 
 .container.form-status-footer {
@@ -192,7 +194,7 @@ p {
 
 .slider {
     position: absolute;
-    cursor: pointer;
+    cursor: none;
     top: 0;
     left: 0;
     right: 0;
@@ -291,7 +293,7 @@ progress::-moz-progress-bar {
 
 .cursor {
     position: fixed;
-    background-color: black;
+    background-color: var(--cursor-color);
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -319,7 +321,7 @@ progress::-moz-progress-bar {
 
 .cursor-follower {
     position: fixed;
-    border: 2px solid black;
+    border: 2px solid var(--cursor-color);
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -652,7 +654,8 @@ header .toggle-btn .line2 {
 .scroll-btn {
     display: flex;
     position: relative;
-    cursor: pointer;
+    cursor: none;
+    z-index: 0;
 }
 
 .banner .scroll-btn .arrow {
@@ -830,7 +833,7 @@ header .toggle-btn .line2 {
     margin-bottom: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid var(--black-color);
-    cursor: pointer;
+    cursor: none;
     overflow: hidden;
 }
 
@@ -1016,7 +1019,7 @@ header .toggle-btn .line2 {
     justify-content: space-between;
     align-items: center;
     transition: all ease .5s;
-    cursor: pointer;
+    cursor: none;
 }
 
 .article .article-item {
@@ -1284,7 +1287,7 @@ footer .footer-top p {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: none;
     text-align: center;
     transition: 0.5s;
     border: 3px solid var(--black-color);
@@ -1429,7 +1432,7 @@ form textarea {
 }
 
 .accordion {
-    cursor: pointer;
+    cursor: none;
     padding: 18px 0;
     width: 100%;
     border: none;

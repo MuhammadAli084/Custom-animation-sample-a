@@ -135,11 +135,11 @@ $(document).ready(function() {
         mouseY = e.clientY;
     });
     // yellow circle
-    $("a").on("mouseenter", function() {
+    $("a, .portfolio-item").on("mouseenter", function() {
         cursor.addClass("active");
         follower.addClass("active");
     });
-    $("a ").on("mouseleave", function() {
+    $("a,.portfolio-item ").on("mouseleave", function() {
         cursor.removeClass("active");
         follower.removeClass("active");
     });
